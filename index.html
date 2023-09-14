@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-Commerce Store</title>
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="E-Commerce Store">
+	<meta name="twitter:description" content="E-Commerce venta de productos de todo tipo">
+	<meta name="twitter:image" content="https://www.viewhotels.jp/ryogoku/wp-content/uploads/sites/9/2020/03/test-img.jpg">
+	<link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+	<header>
+    	<h1 class="title">E-Commerce Store</h1>
+    	<img src="https://www.viewhotels.jp/ryogoku/wp-content/uploads/sites/9/2020/03/test-img.jpg" alt="Shopping Card" width="50" class="card-icon">
+	</header>
+
+	<section class="product-section">
+    	<article class="product">
+        	<img src="https://www.viewhotels.jp/ryogoku/wp-content/uploads/sites/9/2020/03/test-img.jpg" alt="Producto 1" width="200" class="product-image">
+        	<div class="product-details">
+            	<h4 class="product-name">Nombre del Producto</h4>
+            	<p class="product-price">S/. 1000</p>
+            	<button class="add-to-card-btn">Añadir al carrito</button>
+        	</div>
+    	</article>
+	</section>
+
+	<section class="category-section">
+    	<h2 class="category-title">Categorías</h2>
+    	<table class="category-table">
+        	<tr class="category-row">
+				<td class="category-cell">
+					<img src="https://www.viewhotels.jp/ryogoku/wp-content/uploads/sites/9/2020/03/test-img.jpg" alt="Categoría 1 Col 1" width="80" class="category-image">
+				</td>
+				<td class="category-cell">
+					<img src="https://www.viewhotels.jp/ryogoku/wp-content/uploads/sites/9/2020/03/test-img.jpg" alt="Categoría 2 Col 1" width="80" class="category-image">
+				</td>
+        	</tr>
+        	<tr class="category-row">
+				<td class="category-cell">
+					<img src="https://www.viewhotels.jp/ryogoku/wp-content/uploads/sites/9/2020/03/test-img.jpg" alt="Categoría 1 Col 2" width="80" class="category-image">
+				</td>
+				<td class="category-cell">
+					<img src="https://www.viewhotels.jp/ryogoku/wp-content/uploads/sites/9/2020/03/test-img.jpg" alt="Categoría 2 Col 2" width="80" class="category-image">
+				</td>
+        	</tr>
+    	</table>
+	</section>
+
+	<footer>
+    	<h2 class="contact-title">Contacto</h2>
+    	<form class="contact-form" method="post">
+        	<div class="form-field">
+            	<label for="nombre">Nombre</label>
+            	<input type="text" id="nombre" name="nombre" pattern="[A-Za-z ]+" required placeholder="Ingresa tu nombre" class="input-field">
+            	<small class="input-description">Ingresa solo letras de la A a la Z y espacios.</small>
+        	</div>
+        	<div class="form-field">
+            	<label for="email">Email</label>
+            	<input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico" class="input-field">
+        	</div>
+        	<div class="form-field">
+            	<label for="descripcion">Descripción</label>
+            	<textarea id="descripcion" name="descripcion" required placeholder="Ingresa una descripción"></textarea>
+        	</div>
+        	<button type="submit" class="submit-btn">Enviar</button>
+    	</form>
+	</footer>
+</body>
+</html>
